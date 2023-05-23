@@ -1,8 +1,6 @@
-export type Personal = {
-  name: string;
-  last: string;
-  birthDate: Date;
-  gender: string;
-  email: string;
-  newsletter: false;
+export type AccessDataStructure = {
+  username: string;
+  password: string;
+  repeatedPassword: string;
+  accountType: string;
 };
