@@ -1,15 +1,7 @@
-import { SyntheticEvent } from "react";
-
 export default function AccessForm() {
-  const handleSubmit = (event: SyntheticEvent) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    console.log(form);
-  };
-
   return (
     <>
-      <form action="#" aria-label="form" onSubmit={handleSubmit}>
+      <form action="#" aria-label="form">
         <div>
           <label htmlFor="username"></label>
           <input
