@@ -30,7 +30,9 @@ export default function PersonalForm() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <div className="controls">
+          <button type="submit">Login</button>
+        </div>
       </form>
     </>
   );

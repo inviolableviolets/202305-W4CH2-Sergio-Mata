@@ -49,7 +49,7 @@ export default function AccessForm() {
             required
           >
             <option selected disabled>
-              Acount type
+              Acount Type
             </option>
             <option value="personal">Personal</option>
             <option value="business">Business</option>

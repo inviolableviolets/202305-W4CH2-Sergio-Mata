@@ -11,12 +11,12 @@ export default function PersonalForm() {
     <>
       <form action="#" aria-label="form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name"></label>
+          <label htmlFor="first-name"></label>
           <input
             type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
             required
           />
         </div>
@@ -41,21 +41,22 @@ export default function PersonalForm() {
           />
         </div>
         <div>
-          <label htmlFor="gender"></label>
-          <select
-            name="gender
-          "
-            id="gender"
-            required
-          >
-            <option selected disabled>
-              Gender
-            </option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-            <option value="venezuelan">Venezuelan</option>
-          </select>
+          <fieldset>
+            <legend>Select your gender</legend>
+            <input type="radio" id="male" name="options" value="male" />
+            <label htmlFor="male">Male</label>
+            <input type="radio" id="female" name="options" value="female" />
+            <label htmlFor="female">Female</label>
+            <input type="radio" id="other" name="options" value="other" />
+            <label htmlFor="other">Other</label>
+            <input
+              type="radio"
+              id="venezuelan"
+              name="options"
+              value="venezuelan"
+            />
+            <label htmlFor="venezuelan">Venezuelan</label>
+          </fieldset>
         </div>
         <div>
           <label htmlFor="email"></label>
@@ -69,11 +70,13 @@ export default function PersonalForm() {
         </div>
         <div>
           <label htmlFor="newsletter">
-            Are you interested in our newsletter?
+            Are you interested in our newsletter?{" "}
           </label>
           <input type="checkbox" name="checkbox" id="checkbox" />
         </div>
-        <button type="submit">Next</button>
+        <div className="controls">
+          <button type="submit">Next</button>
+        </div>
       </form>
     </>
   );
