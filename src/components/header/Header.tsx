@@ -1,5 +1,3 @@
-import { Menu } from "../menu/Menu";
-
 type Title = {
   title: string;
 };
@@ -9,7 +7,6 @@ export function Header({ title }: Title) {
     <>
       <header className="main-header">
         <h1 className="main-title">{title.toUpperCase()}</h1>
-        <Menu></Menu>
       </header>
     </>
   );

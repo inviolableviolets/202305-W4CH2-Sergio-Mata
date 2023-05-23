@@ -1,8 +1,8 @@
 export type PersonalDataStructure = {
   name: string;
-  last: string;
+  lastName: string;
   birthDate: Date;
-  gender: string;
+  gender: "male" | "female" | "other" | "venezuelan";
   email: string;
   newsletter: false;
 };
